@@ -10,43 +10,48 @@
 </head>
 <body>
     <div class="max-w-7xl mx-auto px-4">
-    <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 py-4">
+    <header class="flex flex-wrap items-center justify-between gap-4 py-4">
     <img src="images/logo.png" alt="Mijn logo" width="80" height="80">
-    <nav>
-        <ul class="flex flex-wrap gap-4">
+<input type="checkbox" id="menu-knop" class="peer sr-only">
+
+<label for="menu-knop"
+       class="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 peer-focus-visible:outline-2 md:hidden">
+    <span class="block h-0.5 w-6 bg-[#3026C1] mb-1"></span>
+    <span class="block h-0.5 w-6 bg-[#3026C1] mb-1"></span>
+    <span class="block h-0.5 w-6 bg-[#3026C1]"></span>
+    <span class="sr-only">Open navigatiemenu</span>
+</label>
+
+    <nav aria-label="Hoofdmenu"
+     class="hidden w-full peer-checked:block md:block md:w-auto max-md:ml-auto max-md:max-w-64 max-md:rounded-lg max-md:border max-md:border-gray-200 max-md:bg-white max-md:p-3 max-md:shadow-lg">
+        <ul class="flex flex-col text-right md:flex-row md:gap-2">
             <li>
                 <a href="index.html"
-                    aria-current="page"
-                    class="block px-3 py-2 rounded-lg text-[#372E40] hover:bg-[#6756F8] hover:text-white">
+                   aria-current="page"
+                   class="block px-3 py-2 rounded-lg text-[#372E40] hover:bg-[#6756F8] hover:text-white">
                     Home
                 </a>
             </li>
             <li>
                 <a href="portfolio.html"
-                    aria-current="page"
-                    class="block px-3 py-2 rounded-lg text-[#372E40] hover:bg-[#6756F8] hover:text-white">
+                   class="block px-3 py-2 rounded-lg text-[#372E40] hover:bg-[#6756F8] hover:text-white">
                     portfolio
                 </a>
             </li>
             <li>
                 <a href="project.html"
-                    aria-current="page"
-                    class="block px-3 py-2 rounded-lg text-[#372E40] hover:bg-[#6756F8] hover:text-white">
+                   class="block px-3 py-2 rounded-lg text-[#372E40] hover:bg-[#6756F8] hover:text-white">
                     project
                 </a>
             </li>
-
             <li>
                 <a href="contact.html"
-                    aria-current="page"
-                    class="block px-3 py-2 rounded-lg text-[#372E40] hover:bg-[#6756F8] hover:text-white">
+                   class="block px-3 py-2 rounded-lg text-[#372E40] hover:bg-[#6756F8] hover:text-white">
                     contact
                 </a>
             </li>
-
         </ul>
     </nav>
-
 </header>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <main class="md:col-span-2">
@@ -58,7 +63,7 @@
     height="800"
     class="w-full aspect-video object-cover rounded-lg mb-4"
 />
-        <h1 class="3xl font-bold mb-2">Welkom</h1>
+        <h1 class="text-3xl font-bold mb-2">Welkom</h1>
         <p class="text-gray-600 leading-relaxed mb-6">introductie</p>
         
     </section>
